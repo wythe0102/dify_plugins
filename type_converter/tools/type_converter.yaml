@@ -1,0 +1,41 @@
+identity:
+  name: "string_converter"
+  author: "wythe0102"
+  label:
+    en_US: "String Converter"
+    zh_Hans: "字符串类型转换"
+    pt_BR: "String Converter"
+description:
+  human:
+    en_US: "convert string to other type"
+    zh_Hans: "convert type to other type"
+    pt_BR: "convert type to other type"
+  llm: "convert type to other type"
+parameters:
+  - name: input_str
+    type: string
+    required: true
+    label:
+      en_US: string_input
+      zh_Hans: string_input
+      pt_BR: string_input
+    human_description:
+      en_US: "input string"
+      zh_Hans: "带转换字符串"
+      pt_BR: "input string"
+    llm_description: "convert string to other type"
+    form: llm
+output_schema:
+  type: object
+  properties:
+    out_str:
+      type: string
+    out_int:
+      type: number
+    out_float:
+      type: number
+    out_eval:
+      type: number
+extra:
+  python:
+    source: tools/type_converter.py

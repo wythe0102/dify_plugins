@@ -1,0 +1,17 @@
+identity:
+  author: "wythe0102"
+  name: "type_converter"
+  label:
+    en_US: "type_converter"
+    zh_Hans: "type_converter"
+    pt_BR: "type_converter"
+  description:
+    en_US: "convert type to other type"
+    zh_Hans: "convert type to other type"
+    pt_BR: "convert type to other type"
+  icon: "icon.svg"
+tools:
+  - tools/type_converter.yaml
+extra:
+  python:
+    source: provider/type_converter.py
